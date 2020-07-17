@@ -178,9 +178,8 @@ public class PushNotification implements IPushNotification {
     }
 
     private void setUpIconColor(Notification.Builder notification) {
-        int colorResID = getAppResourceId("colorAccent", "color");
-        if (colorResID != 0 && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            int color = mContext.getResources().getColor(colorResID);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            int color = Color.parseColor("#0F3670");
             notification.setColor(color);
         }
     }
