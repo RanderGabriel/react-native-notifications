@@ -12,5 +12,5 @@ function run() {
   exec.execSync(`rm -rf lib/android/app/build`);
   exec.execSync(`rm -rf example/android/build`);
   exec.execSync(`rm -rf example/android/app/build`);
-  exec.execSync(`rm -rf lib/dist`);
+  exec.execSync(`rm -rf lib/lib`);
 }

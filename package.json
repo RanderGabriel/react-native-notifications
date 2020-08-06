@@ -19,10 +19,10 @@
     "actionable-notifications",
     "interactive-notifications"
   ],
-  "main": "lib/dist/index.js",
-  "typings": "lib/dist/index.d.ts",
+  "main": "lib/js/index.js",
+  "typings": "lib/js/index.d.ts",
   "scripts": {
-    "build": "rm -rf ./lib/dist && tsc",
+    "build": "rm -rf ./lib/js && tsc",
     "prestart": "npm run build",
     "pretest-js": "npm run build",
     "pretest-unit-ios": "npm run build",
